@@ -20,3 +20,43 @@ Promise.all([
     generateOptions(breedList);
     generateImage(randomImage);
 })
+
+function checkStatus(response) {
+    if(response.ok) {
+        return Promise.resolve(response);
+    } else {
+        return Promise.reject(new Error(response.statusText));
+    }
+}
+
+function generateOptions(data) {
+    const options = data.map(item => `
+        <option value='${item}'>${item}</option>
+        `).join('');
+        select.innerHTML = options;
+}
+
+function generateImage(data) {
+    const html = `
+    <img src='${data}' alt>
+    <p>Click to view images of ${select.value}s</p>
+    `;
+    card.innerHTML = html;
+}
+
+function fetchBreedImage() {
+    const breed = select.value;
+    const img = card.querySelector('img');
+    const p = card.querySelector('p');
+
+    fetchData(`https://dog.ceo/api/breed/${breed}/images/random`)
+    .then(data => {
+        img.src = data.message;
+        img.alt = breed;
+        p.textContent = `Click to view more ${breed}s`;
+    })
+}
+
+select.addEventListener('change', fetchBreedImage);
+card.addEventListener('click', fetchBreedImage);
+form.addEventListener('submit', postData);
