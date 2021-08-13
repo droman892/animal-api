@@ -7,100 +7,16 @@ body {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
     color: #272727;
     background-color: #fcf9fa;
-    text-align: center; }
-  
-p {
-    font-family: "Open Sans", sans-serif; 
-}
-  
-img {
-    display: block;
-    margin: auto;
-}
-  
-a {
-    color: #bf6a91;
-    text-decoration: none; 
-}
-
-a:hover, a:active, a:focus {
-      color: #ac4a77; 
-}
-  
-h1 {
-    text-align: center;
-    font-family: "Bree Serif", serif; 
-}
-  
-button {
-    background-color: #bf6a91;
-    border-color: #bf6a91;
-    color: #fff;
-    transition: background 200ms ease-in-out, border-color 200ms ease-in-out, color 200ms ease-in-out;
-    margin-bottom: 0;
-    margin-top: 20px;
-    text-transform: capitalize;
-    letter-spacing: 0;
-    font-size: 14px;
-    height: 44px;
-    line-height: 44px;
-    display: inline-block; 
-}
-
-button[disabled="true"], button[disabled="true"]:hover {
-      background-color: #f1f1f1;
-      color: #999;
-      border-color: #999; 
-}
-
-      button.full {
-      width: 100%; 
-}
-
-button:hover, button:active, button:focus {
-      background-color: #ac4a77;
-      border-color: #ac4a77;
-      color: #fff; 
-}
-
-button[type="submit"] {
-      display: block;
-      margin: 0; 
-}
-  
-header {
-    background-color: #bf6a91;
-    height: 60px;
-    margin-bottom: 80px; 
-}
-  
-.logo {
-    color: #936616;
-    margin: 0;
-    font-size: 2.8rem;
-    position: absolute;
-    top: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 92px;
-    background-image: url("../images/logo.svg");
-    line-height: 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    text-align: center; 
 }
   
 .container {
     width: 100%;
     max-width: 860px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 80px;
     box-sizing: border-box; 
 }
   
@@ -126,28 +42,7 @@ header {
 }
   
 label {
-    color: #909090;
+    color: black;
     font-size: 2rem;
     text-align: left; 
-}
-  
-input[type="text"], select, textarea {
-    border: solid 2px #ddd; 
-}
-
-input[type="text"]:focus, select:focus, textarea:focus {
-      border: solid 2px #bf6a91; 
-}
-  
-select {
-    text-transform: capitalize; 
-}
-  
-.error {
-    background: #ff826f;
-    border-radius: 4px;
-    padding: 1rem 0;
-    color: white;
-    margin-bottom: 2rem;
-    border: solid 1px tomato;
 }
