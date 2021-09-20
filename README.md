@@ -1,4 +1,4 @@
-![Animal API App]()
+![Animal API App](https://user-images.githubusercontent.com/25372739/134060515-b4f4b9b1-7c1d-4df5-a136-e5626636eb7d.png)
 
 This is an application for selecting the name of a dog breed and using the [Dog API](https://dog.ceo/dog-api/) to display images of that particular breed.
 
@@ -12,7 +12,7 @@ This is an application for selecting the name of a dog breed and using the [Dog 
 
 ## Preview
 
-![Weather API App - GIF]()
+![Weather API App - GIF](https://user-images.githubusercontent.com/25372739/134061239-d61243a8-8fc9-4e5f-b732-496dadbcf865.gif)
 
 [Live Preview](http://david-roman.tech/animal-api/)
 
