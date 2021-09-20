@@ -39,7 +39,7 @@ function generateOptions(data) {
 function generateImage(data) {
     const html = `
     <img src='${data}' alt>
-    <p>Click to view images of ${select.value}s</p>
+    <p>Click image to view more ${select.value}s</p>
     `;
     card.innerHTML = html;
 }

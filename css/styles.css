@@ -11,12 +11,17 @@ body {
     background-color: #fcf9fa;
     text-align: center; 
 }
+
+.dropdown {
+    margin-bottom: 20px;
+    width: 70%;
+}
   
 .container {
     width: 100%;
     max-width: 860px;
     margin: 0 auto;
-    padding: 80px;
+    padding: 50px;
     box-sizing: border-box; 
 }
   
@@ -37,7 +42,7 @@ body {
 }
 
 .card p {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       margin-bottom: 1rem;
 }
   
